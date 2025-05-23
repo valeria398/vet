@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registrar Mascota</title>
+  <style>
+    body {
+      background-color: #e8f5e9;
+      font-family: Arial, sans-serif;
+    }
+    .formulario {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 50px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="formulario">
+    <h2>Registrar Mascota</h2>
+    <form action="/registro" method="post">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required>
+      
+      <label>Especie:</label>
+      <input type="text" name="especie" required>
+      
+      <label>Raza:</label>
+      <input type="text" name="raza" required>
+      
+      <label>Edad:</label>
+      <input type="number" name="edad" required>
+      
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>

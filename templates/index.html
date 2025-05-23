@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Veterinaria</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      padding: 30px;
+      border-radius: 20px;
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin-top: 80px;
+    }
+    a {
+      margin: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #009688;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    img {
+      width: 100px;
+    }
+    .descripcion {
+      margin: 20px 0;
+      color: #444;
+    }
+    .endpoints {
+      margin-top: 20px;
+      text-align: left;
+      padding: 20px;
+      background-color: #e0f2f1;
+      border-radius: 10px;
+    }
+    .endpoints h3 {
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+    .endpoints p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenido a la Veterinaria 🐶🐱</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Mascota">
+
+    <p class="descripcion">
+      Somos una clínica veterinaria dedicada al cuidado integral de tus mascotas. 
+      Ofrecemos atención médica, seguimiento y registro de cada peludo que nos visita. 💉🐾
+    </p>
+
+    <div class="endpoints">
+      <h3>Endpoints:</h3>
+      <p><strong>POST /registro:</strong> para llenar el formulario de una nueva mascota</p>
+      <p><strong>GET /lista:</strong> para mostrar todas las mascotas registradas</p>
+    </div>
+
+    <p style="margin-top: 30px;">Usa los siguientes enlaces para acceder a la aplicación:</p>
+    <a href="/registro">Registrar mascota</a>
+    <a href="/lista">Ver mascotas registradas</a>
+  </div>
+</body>
+</html>
